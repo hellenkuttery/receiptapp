@@ -1,2 +1,1 @@
-# NEFLIX PROJECT
-This project is about .....
+# MyProject
