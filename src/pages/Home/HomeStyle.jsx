@@ -4,6 +4,8 @@ export const MainContainer = styled.div`
   /* arama yapıldığında açılan yiyecek kartlarının kutusu RECİPECARD*/
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
+  margin:auto;
   /* sığmayan taşsın düşsün */
   /* flex-direction: row; */
   justify-content: center;
@@ -12,11 +14,11 @@ export const MainContainer = styled.div`
 
 export const Cards = styled.div`
   /* search den sonra çıkan herbir yiyecek kart RECİPECARD*/
-  height: 300px;
-  background: #e1f1dd;
+  height: 350px;
+  background: #F4E2DE;
   padding: 5px;
   border-radius: 3px;
-  width: 300px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +50,7 @@ export const RecipeImage = styled.img`
 
 export const RecipeButton = styled.button`
   /* view more  buton */
-  background-color: #00adb5;
+  background-color: #025259;
   padding: 5px;
   /* outline: none; */
   height: 2rem;

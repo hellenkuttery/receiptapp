@@ -9,12 +9,19 @@ import {
   IngredContainer,
   OtherPart
 } from "./DetailsStyle";
-import diet from "../../assets/diet.svg";
+import diet from "../../assets/recipe.png";
 const Details = () => {
   const {
     state: { recipe },
   } = useLocation();
   console.log(recipe);
+  // id ile gelseydi
+  // const { id } = useParams(); // URL'den 'id' parametresini alır
+  // console.log("Recipe ID:", id);
+  // const recipe = recipes.find((r) => r.id === id);
+  // Route yapılandırması da 
+  // <Route path="/details/:id" element={<Details />} /> böyle olacaktı
+
 
   return (
     <DetailContainer>
@@ -22,8 +29,8 @@ const Details = () => {
         <h4>{recipe.label}</h4>
         <img src={diet} alt="" />
       </HeaderContainer>
-
-      <DetailPart>
+      <DetailContainer>
+        <DetailPart>
         <OtherPart>
         <>NUTRIENTS</>
           <span>
@@ -67,10 +74,12 @@ const Details = () => {
       <IngredContainer>
         {recipe.ingredientLines.map((ingredient,index)=>(
           <div key={index}>
-            <p>{index+1} * {ingredient} </p>
+            <p>{index+1} - {ingredient} </p>
           </div>
         ))}
       </IngredContainer>
+      </DetailContainer>
+      
     </DetailContainer>
   );
 };

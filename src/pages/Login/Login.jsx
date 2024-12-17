@@ -21,7 +21,7 @@ const navigate=useNavigate()
     <LoginContainer>
       <FormContainer> 
         <StyledImg src={Meal}/>
-       <Header> CLARUSWAY/RECIPE</Header>
+       <Header> RECIPE APP</Header>
       <StyledForm onSubmit={handleSubmit}>
         <StyledInput type="text" placeholder="username" onChange={(e)=>setName(e.target.value)} /> 
         <StyledInput type="password" placeholder="password" onChange={(e)=>setPassword(e.target.value)}/> 

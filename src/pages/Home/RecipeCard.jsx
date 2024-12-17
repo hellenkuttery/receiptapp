@@ -13,6 +13,9 @@ const RecipeCard = () => {
             <RecipeHeader>{recipe.label}</RecipeHeader>
             <RecipeImage src={recipe.image}/>
             <RecipeButton onClick={()=> navigate("/details", {state:{recipe}})}>Details</RecipeButton>
+            {/* Eğer details/id ile gönderilseydi */}
+            {/* <RecipeButton onClick={() => navigate(`/details/${recipe.id}`)}>Details</RecipeButton> */}
+
         </Cards>
       ))}
     </MainContainer>

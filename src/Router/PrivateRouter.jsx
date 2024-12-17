@@ -15,11 +15,7 @@ import { Navigate, Outlet } from "react-router-dom";
 const PrivateRouter = () => {
   const { name, password } = useContext(RecipeContext);
 
-  if (name === "helen" && password === "1234") {
-    return <Outlet />;
-  }
-
-  return <Navigate to="/" />;
+ return name === "helen" && password === "1234" ? <Outlet /> : <Navigate to="/" />
 };
 
 export default PrivateRouter;

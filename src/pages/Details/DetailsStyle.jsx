@@ -7,8 +7,8 @@ export const DetailContainer = styled.div`
   flex-wrap: wrap;
   /* flex-direction: column; */
   justify-content: center;
-  background: #00adb5;
-  min-height: calc(100vh - 75px);
+  background: #025259;
+  min-height: calc(80vh 75px);
   /* height: fit-content; */
   padding: 5px;
 `;
@@ -19,11 +19,11 @@ export const DetailPart = styled.div`
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
+ 
   margin: 1rem;
   border: 1px solid white;
   border-radius: 5px;
-  background-color: pink;
+  background-color: #F4E2DE;
   /* background-color: #e1f1dd; */
   /* height: calc(100vh - 300px); */
   @media (max-width: 1250px) {
@@ -35,14 +35,15 @@ export const DetailPart = styled.div`
 
 export const ImgContainer = styled.div`
   /* resmin div i */
-  background-color: green;
-
+  background-color:#F4E2DE;
+  margin: 1rem;
   border: 1px solid #00adb5;
   padding: 10px;
   border-radius: 3px;
-  margin: 2rem;
+
   img {
     border-radius: 10px;
+    padding:1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,36 +51,42 @@ export const ImgContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  /* üstteki başlık ve kadın resmi */
-  background-color: darkgray;
 
-  display: flex;
-  justify-content: space-evenly;
-  margin: 25px;
-  font-size: 3rem;
+color:#F4E2DE;
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+  font-size: 2rem;
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   img {
-    width: 200px;
+    width: 150px;
+    padding: 2rem;
   }
 `;
 
 export const IngredContainer = styled.div`
   /* alttaki bilgiler, içindekiler */
   width: 400px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin: 2rem;
-  background-color: gray;
+  background-color:#F4E2DE;
+  margin: 1rem;
+  border: 1px solid #00adb5;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: left;
 `;
 
 export const OtherPart = styled.div`
   /* üstteki bilgiler */
-  background-color: lightgray;
+  /* background-color: lightgray; */
 
   width: 400px;
   text-align: right;
-  font-size: 1.8rem;
+  font-size: 1rem;
   margin: 2rem;
   display: flex;
   flex-direction: column;
